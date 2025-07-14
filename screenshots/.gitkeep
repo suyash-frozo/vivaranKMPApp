@@ -1,0 +1,10 @@
+# This file ensures the screenshots directory is tracked by Git
+# Replace this with actual screenshots of your app
+
+# Expected screenshot files:
+# - auth_screen.png
+# - dashboard.png  
+# - agent_selection.png
+# - upload_screen.png
+# - results_screen.png
+# - history_screen.png

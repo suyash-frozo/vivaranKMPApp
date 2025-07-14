@@ -2,6 +2,28 @@
 
 Vivaran is a sophisticated Kotlin Multiplatform mobile application that leverages AI to analyze and process various types of documents. Built for Android and iOS, it provides intelligent insights for medical reports, insurance claims, farmer schemes, and general document analysis.
 
+## 📱 Screenshots
+
+<div align="center">
+
+| Authentication | Dashboard | Agent Selection |
+|:---:|:---:|:---:|
+| ![Auth Screen](screenshots/auth_screen.png) | ![Dashboard](screenshots/dashboard.png) | ![Agent Selection](screenshots/agent_selection.png) |
+| Secure OAuth login | Main dashboard with quick actions | Choose specialized AI agents |
+
+| Document Upload | Analysis Results | History |
+|:---:|:---:|:---:|
+| ![Upload Screen](screenshots/upload_screen.png) | ![Results Screen](screenshots/results_screen.png) | ![History Screen](screenshots/history_screen.png) |
+| Intuitive document upload | Detailed analysis insights | Previous sessions |
+
+</div>
+
+> **📸 How to Add Screenshots:**
+> 1. Run your app on Android/iOS device or simulator
+> 2. Navigate through each screen (Auth → Dashboard → Agent Selection → Upload → Results → History)
+> 3. Take screenshots and save them as PNG files in the `screenshots/` directory
+> 4. Use the exact filenames shown above for proper display
+
 ## 🌟 Features
 
 ### 🔍 **AI-Powered Document Analysis**
@@ -25,6 +47,24 @@ Vivaran is a sophisticated Kotlin Multiplatform mobile application that leverage
 - Document upload with real-time progress
 - Analysis history and session management
 - Agent-based document processing workflow
+
+## 🎯 What Makes Vivaran Special
+
+### 🏥 Medical Document Intelligence
+- **Prescription Analysis**: Extract medications, dosages, and instructions
+- **Lab Report Processing**: Identify abnormal values and health indicators
+- **Insurance Claim Optimization**: Maximize claim amounts with AI suggestions
+
+### 🌾 Government Scheme Assistant
+- **Farmer Scheme Eligibility**: Check qualification for PM-KISAN, crop insurance
+- **Document Verification**: Validate required documents for applications
+- **Application Guidance**: Step-by-step application process assistance
+
+### 🤖 AI-Powered Features
+- **Multi-language OCR**: Extract text from images in multiple Indian languages
+- **Smart Classification**: Automatically categorize document types
+- **Contextual Analysis**: Understand document context for better insights
+- **Real-time Processing**: Get results in under 30 seconds
 
 ## 🏗️ Architecture
 
@@ -84,13 +124,31 @@ Vivaran is a sophisticated Kotlin Multiplatform mobile application that leverage
 
 ## 📋 User Flow
 
-1. **Authentication**: Secure login via OAuth
-2. **Dashboard**: Overview of features and quick actions
-3. **Agent Selection**: Choose AI agent based on document type
-4. **Document Upload**: Upload PDF, JPEG, or PNG files
-5. **AI Processing**: Real-time analysis with progress tracking
-6. **Results Display**: Detailed insights and recommendations
-7. **History**: Access previous analysis sessions
+```mermaid
+graph TD
+    A[🔐 Authentication] --> B[📊 Dashboard]
+    B --> C[🤖 Agent Selection]
+    C --> D[📤 Document Upload]
+    D --> E[⚡ AI Processing]
+    E --> F[📋 Results Display]
+    F --> G[📚 History]
+    G --> B
+    B --> G
+```
+
+### Step-by-Step Workflow
+
+1. **🔐 Authentication**: Secure login via OAuth (Google, Facebook, etc.)
+2. **📊 Dashboard**: Overview of features, recent analyses, and quick actions
+3. **🤖 Agent Selection**: Choose specialized AI agent based on document type:
+   - 📄 Medical Report Analysis
+   - 🛡️ Insurance Claim Optimization  
+   - 🌾 Farmer Scheme Eligibility
+   - 📊 General Document Summarizer
+4. **📤 Document Upload**: Upload PDF, JPEG, or PNG files with drag-and-drop
+5. **⚡ AI Processing**: Real-time analysis with progress tracking and ETA
+6. **📋 Results Display**: Detailed insights, recommendations, and actionable items
+7. **📚 History**: Access previous analysis sessions and download reports
 
 ## 🛠️ Technology Stack
 
